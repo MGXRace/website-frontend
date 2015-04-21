@@ -21,42 +21,180 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">testproj</h3>
-      </div>
-
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4>Sass</h4>
-          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
+    <header class="page-head">
+      <div class="page-title-bar">
+        <div class="container">
+          <a href="/">
+            <img src="/images/mgx_logo.png" alt="MGX Race logo (made by wh1te)">
+          </a>
         </div>
       </div>
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#page-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="page-navbar-collapse">
+            <ul class="nav nav-pills">
+              <li role="presentation" class="active"><a href="/">Home</a></li>
+              <li role="presentation" class="dropdown">
+                <a href="#" role="button" aria-expanded="false">
+                  Players <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/players/">Current version</a></li>
+                  <li><a href="/players-old/">Old version (1.0)</a></li>
+                </ul>
+              </li>
+              <li role="presentation" class="dropdown ">
+                <a href="#" role="button" aria-expanded="false">
+                  Maps <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/maps/">Current version</a></li>
+                  <li><a href="/maps-old/">Old version (1.0)</a></li>
+                </ul>
+              </li>
+              <li role="presentation" class="disabled"><a href="#" class="disabled">Demos</a></li>
+              <li role="presentation" class="disabled"><a href="#" class="disabled">Serverlist</a></li>
+              <li role="presentation" class="disabled"><a href="#" class="disabled">Forum</a></li>
+              <li role="presentation" class="disabled"><a href="#" class="disabled">Help</a></li>
+              <li role="presentation" class=""><a href="/preferences">Preferences</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
-      </div>
+      <div class="page-content">
+        <div class="container">
+
+          <h1>MGX Race</h1>
+          <p>New website being constructed for Racesow 1.5.</p>
+          <p>Website contains the latest race statistics for 1.5 and a snapshot of 1.0 statistics (taken at 17-02-2015).</p>
+
+          <h4>Servers</h4>
+          <p>Currently there is only 1 gameserver being maintained: <a href="http://dpmaster.deathmask.net/?game=warsow&amp;server=mgxrace.net:44400" target="_blank">Racesow Server (BETA) - Ranked www.mgxrace.net</a>. Other servers running racesow or with MGX in their name are not maintained by us and do not send stats to this website.</p><p>
+
+          </p><h4>Contact</h4>
+          <p>Bugreports and suggestions can be posted <a href="http://www.warsow.net/forum/thread/16190">here</a>.</p>
+
+          <h4>Planned features:</h4>
+          <ul>
+              <li>
+                  Showing unified racetimes per map for versions 1.5 and 1.0. This way, all the hard work done on records in
+                  1.0 will not go to waste.
+              </li>
+              <li>
+                  New skill rating formula which takes into account the number of players that tried a map, the number of
+                  players who actually finished it and the time they needed for it.
+              </li>
+              <li>
+                  And more..
+              </li>
+          </ul>
+
+          <h4>Last 10 records</h4>
+          <table class="table table-bordered table-striped table-hover table-condensed">
+            <tbody>
+              <tr>
+                <th>Map</th>
+                <th>Player</th>
+                <th>Time</th>
+                <th>Type</th>
+                <th><abbr title="Based on timezone UTC. Change in preferences">Date</abbr></th>
+              </tr>
+              <tr>
+                <td><a href="/maps/detail/165">4m-cubicus</a></td>
+                <td class="player-name"><a href="/players/detail/45"><span style="color:#ffffff">Version2.0</span></a></td>
+                <td>4.224</td>
+                <td><span class="medal-silver">Silver</span></td>
+                <td><span data-toggle="tooltip" title="" data-placement="right" data-original-title="2015-04-21 18:08:04">52 minutes ago</span></td>
+              </tr>
+              <tr>
+                <td><a href="/maps/detail/291">pink_tutorial</a></td>
+                <td class="player-name"><a href="/players/detail/241"><span style="color:#ffffff">PeeseChizza</span></a></td>
+                <td>1:22.147</td>
+                <td><span class="medal-silver">Silver</span></td>
+                <td><span data-toggle="tooltip" title="" data-placement="right" data-original-title="2015-04-21 16:01:32">2 hours ago</span></td>
+              </tr>
+              <tr>
+                <td><a href="/maps/detail/137">aurora-friday-rl</a></td>
+                <td class="player-name"><a href="/players/detail/6"><span style="color:#ffffff">joemaro</span></a></td>
+                <td>25.623</td>
+                <td><span class="medal-bronze">Bronze</span></td>
+                <td><span data-toggle="tooltip" title="" data-placement="right" data-original-title="2015-04-21 11:07:00">7 hours ago</span></td>
+              </tr>
+
+                <tr>
+                    <td><a href="/maps/detail/291">pink_tutorial</a></td>
+                    <td class="player-name"><a href="/players/detail/210"><span style="color:#b4b4b4">sjn</span><span style="color:#000000">|</span><span style="color:#0000ff">Pink</span></a></td>
+                    <td>35.776</td>
+                    <td><span class="medal-gold">Gold</span></td>
+                    <td><span data-toggle="tooltip" title="" data-placement="right" data-original-title="2015-04-21 03:56:08">15 hours ago</span></td>
+                </tr>
+
+                <tr>
+                    <td><a href="/maps/detail/255">bardok-kakasi</a></td>
+                    <td class="player-name"><a href="/players/detail/210"><span style="color:#b4b4b4">sjn</span><span style="color:#000000">|</span><span style="color:#0000ff">Pink</span></a></td>
+                    <td>10.414</td>
+                    <td><span class="medal-gold">Gold</span></td>
+                    <td><span data-toggle="tooltip" title="" data-placement="right" data-original-title="2015-04-21 02:52:43">16 hours ago</span></td>
+                </tr>
+
+                <tr>
+                    <td><a href="/maps/detail/255">bardok-kakasi</a></td>
+                    <td class="player-name"><a href="/players/detail/82"><span style="color:#ffffff">ikuinen</span></a></td>
+                    <td>30.664</td>
+                    <td><span class="medal-bronze">Bronze</span></td>
+                    <td><span data-toggle="tooltip" title="" data-placement="right" data-original-title="2015-04-21 02:51:02">16 hours ago</span></td>
+                </tr>
+
+                <tr>
+                    <td><a href="/maps/detail/176">acid_defrag_1</a></td>
+                    <td class="player-name"><a href="/players/detail/227"><span style="color:#ffffff">SirMissalot</span></a></td>
+                    <td>9.073</td>
+                    <td><span class="medal-bronze">Bronze</span></td>
+                    <td><span data-toggle="tooltip" title="" data-placement="right" data-original-title="2015-04-20 23:16:48">19 hours ago</span></td>
+                </tr>
+
+                <tr>
+                    <td><a href="/maps/detail/137">aurora-friday-rl</a></td>
+                    <td class="player-name"><a href="/players/detail/249"><span style="color:#ffffff">sjn|flekica</span></a></td>
+                    <td>14.880</td>
+                    <td><span class="medal-gold">Gold</span></td>
+                    <td><span data-toggle="tooltip" title="" data-placement="right" data-original-title="2015-04-20 22:16:21">20 hours ago</span></td>
+                </tr>
+
+                <tr>
+                    <td><a href="/maps/detail/137">aurora-friday-rl</a></td>
+                    <td class="player-name"><a href="/players/detail/45"><span style="color:#ffffff">Version2.0</span></a></td>
+                    <td>16.632</td>
+                    <td><span class="medal-silver">Silver</span></td>
+                    <td><span data-toggle="tooltip" title="" data-placement="right" data-original-title="2015-04-20 20:20:33">22 hours ago</span></td>
+                </tr>
+
+                <tr>
+                    <td><a href="/maps/detail/136">aurora-friday</a></td>
+                    <td class="player-name"><a href="/players/detail/45"><span style="color:#ffffff">Version2.0</span></a></td>
+                    <td>29.743</td>
+                    <td><span class="medal-gold">Gold</span></td>
+                    <td><span data-toggle="tooltip" title="" data-placement="right" data-original-title="2015-04-20 20:03:14">22 hours ago</span></td>
+                </tr>
+            </tbody>
+          </table>
+
+        </div>
     </div>
+
+        <footer class="page-foot">
+          <small>Copyright © MGX Race Development Team 2015. All rights reserved.</small>
+        </footer>
 
         <!-- build:js scripts/vendor.js -->
         <script src="node_modules/jquery/dist/jquery.js"></script>

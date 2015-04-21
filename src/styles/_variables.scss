@@ -1,0 +1,46 @@
+
+$gray-base:              #fff;
+$gray-lighter:           darken($gray-base, 13.5%);
+$gray-light:             darken($gray-base, 20%);
+$gray:                   darken($gray-base, 33.5%);
+$gray-dark:              darken($gray-base, 46.7%);
+$gray-darker:            darken($gray-base, 93.5%);
+
+$brand-primary:          darken(#ff802a, 6.5%);
+
+$body-bg:                #221626;
+$content-bg:             #3e3a46;
+$text-color:             $gray-lighter;
+$link-color:             #ff6d0b;
+
+$component-active-color:    #fff;
+$component-active-bg:       $brand-primary;
+
+$table-bg: #433f4b;
+$table-bg-accent:               #6B606E;
+$table-bg-hover:                #89808C;
+$table-border-color:            #221626;
+
+$btn-default-color:              #555;
+
+$input-color:                    $gray-darker;
+
+$dropdown-bg:                    #2F2831;
+
+$navbar-default-bg:                #2F2831;
+$navbar-default-border:            transparent;
+
+$navbar-default-toggle-hover-bg:           $brand-primary;
+$navbar-default-toggle-icon-bar-bg:        #fff;
+
+$nav-link-hover-bg:                         darken($brand-primary, 12.5%);
+
+$nav-pills-active-link-hover-bg:            $component-active-bg;
+$nav-pills-active-link-hover-color:         $component-active-color;
+
+$pagination-color:                     #777;
+$pagination-bg:                        #fff;
+$pagination-border:                    #ddd;
+
+$pager-bg:                             $brand-primary;
+$pager-border:                         darken($pager-bg, 5%);
