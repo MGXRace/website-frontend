@@ -89,7 +89,8 @@ gulp.task('serve', ['watchScripts', 'styles', 'fonts'], function() {
   });
 
   gulp.watch(['src/styles/**/*.scss'], ['styles', reload]);
-  gulp.watch(['src/images/**/*', 'src/fonts/**/*', 'src/**/*.html'], [reload]);
+  gulp.watch(['src/images/**/*', 'src/fonts/**/*', 'src/**/*.html'])
+    .on('change', reload);
 });
 
 gulp.task('build', ['clean', 'html'], function() {
